@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>科技感网页</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* 上面按钮样式部分插入这里 */
+        /* 按钮居中容器 */
+        .button-container {
+            display: flex;
+            justify-content: center; /* 水平居中 */
+            align-items: center; /* 垂直居中 */
+            margin-top: 10px; /* 增加顶部边距 */
+            margin-bottom: 10px; /* 增加底部边距 */
+        }
+
+        #startTestBtn {
+            width: 250px;
+            height: 60px;
+            font-size: 1.2em;
+            font-weight: 600;
+            text-transform: uppercase;
+            border: 2px solid #00ffcc;
+            background: transparent;
+            color: #00ffcc;
+            border-radius: 30px;
+            cursor: pointer;
+            text-shadow: 0 0 5px rgba(0, 255, 255, 1), 0 0 10px rgba(0, 255, 255, 0.9);
+            transition: all 0.3s ease;
+            box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.5);
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        #startTestBtn:hover {
+            background: linear-gradient(45deg, #00ffcc, #2a4dff);
+            color: white;
+            border-color: #2a4dff;
+            box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.8), 0px 0px 40px rgba(0, 255, 255, 0.7);
+            transform: translateY(-5px);
+        }
+
+        #startTestBtn:active {
+            transform: translateY(2px);
+            box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.6);
+        }
+
+        #startTestBtn:focus {
+            outline: none;
+            box-shadow: 0px 0px 20px rgba(0, 255, 255, 1);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>QuizBot</h1>
+    <p>一键生成四则运算题目，练习从未如此简单！</p>
+</header>
+
+<section class="features">
+    <div class="feature">
+        <h2>自动出题</h2>
+        <p>轻松生成题目，快速提升数学能力。</p>
+    </div>
+    <div class="feature">
+        <h2>精准练习</h2>
+        <p>精准出题，助你掌握四则运算技巧。</p>
+    </div>
+    <div class="feature">
+        <h2>随时随地</h2>
+        <p>随时开始练习，让数学学习更灵活。</p>
+    </div>
+</section>
+
+<!-- 将按钮放在居中容器中 -->
+<div class="button-container">
+    <button id="startTestBtn">开始测试</button>
+</div>
+
+<footer>
+    <p>© 2024 QUIZBOT. All Rights Reserved.</p>
+</footer>
+
+<script type="text/javascript">
+    // 按钮点击后跳转到测试页面
+    document.getElementById("startTestBtn").onclick = function() {
+        window.location.href = "quiz.html";  // 跳转到测试页面 quiz.html
+    };
+</script>
+
+</body>
+</html>
